@@ -1,0 +1,45 @@
+// hero section
+.page-section-hero {
+    text-transform: uppercase;
+    color: $white;
+}
+
+.hero-slider {
+    .slide {
+        position: relative;
+        height: 100vh;
+        min-height: 500px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.hero-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-sale {
+    margin-bottom: 30px;
+}
+
+.increased-letter-spacing {
+    letter-spacing: 4px;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+.slick-dots li.slick-active button::before {
+    color: $white;
+    opacity: 0.75;
+}

@@ -1,0 +1,21 @@
+.section-title {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 300;
+    position: relative;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        border-top: $accent solid 2px;
+        width: 111px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    &::after {
+        bottom: -10px;
+        top: auto;
+    }
+}

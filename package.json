@@ -1,0 +1,19 @@
+{
+  "name": "brandly",
+  "version": "1.0.0",
+  "description": "psd to html project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marysia Kolaczynska",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-stylelint": "^3.9.0",
+    "gulp-watch": "^4.3.11",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}
