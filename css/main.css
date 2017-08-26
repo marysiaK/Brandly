@@ -299,7 +299,10 @@ span.small-letters {
   width: 370px;
   min-height: 418px;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  transition: -webkit-transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in; }
   .collection:first-of-type {
     margin-left: 0; }
 
@@ -319,9 +322,8 @@ span.small-letters {
 .collection:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02); }
-
-.collection:hover.collection__border {
-  border: 5px solid #fff; }
+  .collection:hover .collection__border {
+    border: 5px solid #fff; }
 
 .latest-item-info {
   height: 100%;

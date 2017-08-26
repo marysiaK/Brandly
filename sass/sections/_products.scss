@@ -11,6 +11,7 @@
     min-height: 418px;
     background-repeat: no-repeat;
     background-position: center;
+    transition: transform 0.4s ease-in;
 
     &:first-of-type {
         margin-left: 0;
@@ -34,10 +35,10 @@
 
 .collection:hover {
     transform: scale(1.02);
-}
 
-.collection:hover.collection__border {
-    border: 5px solid $white;
+    .collection__border {
+        border: 5px solid $white;
+    }
 }
 
 .latest-item-info {
