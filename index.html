@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Brandly</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <!-- HEADER -->
-    <header>
+    <header class="main-header">
         <nav class="main-nav" >
             <div class="hamburger-menu">
                 <span></span>
@@ -19,7 +20,7 @@
                 <span></span>
             </div>
             <a class="header-logo-link" href="index.html">
-                <span class="brand-span">BRAND</span><span class="small-letters">ly</span>                
+                <div class="logo-brand">brand</span><span class="small-letters">ly</span></div>               
             </a>
             <ul class="main-nav__links">
                 <li ><a class="main-nav__link" href="#hero">Home</a></li>
@@ -30,7 +31,7 @@
                 <li ><a class="main-nav__link" href="#contact">Contact</a></li>
             </ul> 
         </nav>
-        </header>
+    </header>
     <!-- HERO SECTION -->
         <section id="hero" class="page-section page-section-hero">
             <div class="hero-slider"> 
@@ -38,25 +39,25 @@
                     <p class="hero-description increased-letter-spacing">spring / summer collection</p>
                     <p class="hero-sale">up to 60% on new arrivals</p>
                     <p class="hero-description">trending new items, from creators around the world</p>
-                    <button class="button">shop now</button>
+                    <button class="btn-1 hero-button">shop now</button>
                 </div>
-                 <div class="slide" style="background-image: url('images/slide1.jpg');">
+                <div class="slide" style="background-image: url('images/slide1.jpg');">
                     <p class="hero-description increased-letter-spacing">spring / summer collection</p>
                     <p class="hero-sale">up to 60% on new arrivals</p>
                     <p class="hero-description">trending new items, from creators around the world</p>
-                    <button class="button">shop now</button>
+                    <button class="btn-1 hero-button">shop now</button>
                 </div>
-                 <div class="slide" style="background-image: url('images/slide1.jpg');">
+                <div class="slide" style="background-image: url('images/slide1.jpg');">
                     <p class="hero-description increased-letter-spacing">spring / summer collection</p>
                     <p class="hero-sale">up to 60% on new arrivals</p>
                     <p class="hero-description">trending new items, from creators around the world</p>
-                    <button class="button">shop now</button>
+                    <button class="btn-1 hero-button">shop now</button>
                 </div>
-                 <div class="slide" style="background-image: url('images/slide1.jpg');">
+                <div class="slide" style="background-image: url('images/slide1.jpg');">
                     <p class="hero-description increased-letter-spacing">spring / summer collection</p>
                     <p class="hero-sale">up to 60% on new arrivals</p>
                     <p class="hero-description">trending new items, from creators around the world</p>
-                    <button class="button">shop now</button>
+                    <button class="btn-1 hero-button">shop now</button>
                 </div>
             </div>
         </section>
@@ -79,44 +80,92 @@
                 </div>
             </div>
             <div class="sales">
-                <div class="latest-item sale-item autumn-sale">
-                    <div class="latest-item-info" style="background-image: url('images/autumn.jpg');"><h2 class="sale-name">40% Off<br>New Autumn Collection</h2></div>
+                <div class="latest-item sale-item autumn-sale" style="background-image: url('images/autumn.jpg');">
+                    <div class="latest-item-info"><h2 class="sale-name">40% Off<br>New Autumn Collection</h2></div>
                 </div>
-                <div class="latest-item sale-item spirit-sale">
+                <div class="latest-item sale-item spirit-sale" style="background-image: url('images/megaSale.jpg');">
                     <div class="latest-item-info">              
-                        <div class="latest-item-info" style="background-image: url('images/megaSale.jpg');"><h2 class="sale-name">MEGA SALE ON ITEMS FROM SPIRIT COLLECTION</h2></div>
+                        <div class="latest-item-info"><h2 class="sale-name">MEGA SALE<br>ON ITEMS FROM SPIRIT COLLECTION</h2></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="trending-items" class="page-section page-section-trending-items">
-            <h2 class="section-title">Trending items</h2>
-            <div class="content-container">
             </div>
         </section>
     <!-- BLOG SECTION -->
         <section id="blog" class="page-section page-section-blog">
             <h2 class="section-title">From The Blog</h2>
             <div class="content-container">
+                <div class="blog-slider">
+                    <div class="blog-slide">
+                        <div class="blog-image" style="background-image: url('images/germanFashion.jpg');"></div>
+                            <div class="blog-section">
+                                <h4 class="blog-title">German Fashion Wizards</h4>
+                                    <div class="blog-info">
+                                        <p class="blog-author">James Steed</p>
+                                        <p class="blog-topic">Fashion</p>
+                                    </div> 
+                                        <p class="blog-text">This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the European fashion scene and this year at Paris Fashion Week they introduced their new collection. </p>
+                                        <button class="button blog-btn">READ MORE</button>
+                            </div> 
+                        </div>
+                    <div class="blog-slide">
+                        <div class="blog-image" style="background-image: url('images/sunglasses.jpg');"></div>
+                            <div class="blog-section">
+                                <h4 class="blog-title">Anne Stewart's sunglasses</h4>
+                                    <div class="blog-info">
+                                        <p class="blog-author">By Marry Beard</p>
+                                        <p class="blog-topic">Trending</p>
+                                    </div> 
+                                        <p class="blog-text">Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...</p>
+                                        <button class="button blog-btn">READ MORE</button>
+                            </div> 
+                        </div>
+                    <div class="blog-slide">
+                        <div class="blog-image" style="background-image: url('images/germanFashion.jpg');"></div>
+                            <div class="blog-section">
+                                <h4 class="blog-title">German Fashion Wizards</h4>
+                                    <div class="blog-info">
+                                        <p class="blog-author">James Steed</p>
+                                        <p class="blog-topic">Fashion</p>
+                                    </div> 
+                                        <p class="blog-text">This week we had the chance of interviewing two creative artists from Germany. These guys are simply amazing at what they do with the European fashion scene and this year at Paris Fashion Week they introduced their new collection. </p>
+                                        <button class="button blog-btn">READ MORE</button>
+                            </div> 
+                    </div>
+                    <div class="blog-slide">
+                        <div class="blog-image" style="background-image: url('images/sunglasses.jpg');"></div>
+                            <div class="blog-section">
+                                <h4 class="blog-title">Anne Stewart's sunglasses</h4>
+                                    <div class="blog-info">
+                                        <p class="blog-author">By Marry Beard</p>
+                                        <p class="blog-topic">Trending</p>
+                                    </div> 
+                                        <p class="blog-text">Just amazing! That is how i can describe this person. So creative,so inspiring. I was watching her create in her small studio in London and i was amazed at how every little detail gets included in her creaions. From frames,to glass thickness she blew me away...</p>
+                                        <button class="button blog-btn">READ MORE</button>
+                            </div> 
+                    </div>
+                </div>
             </div>
         </section>
         <!-- SUBSCRIBE SECTION -->
-        <section id="subscribe" class="page-section page-section-subscribe">
+        <section id="subscribe" class="full-width-section page-section-subscribe" style="background-image: url('images/subscribe.jpg');">
             <div class="content-container">
-                <p>
+                <p class="subscribe-title">
                 SUBSCRIBE TO OUR NEWSLETTER TO RECEIVE LATEST NEWS AND OFFERS
                 </p>
                     <form action="" class="subscription-form">
-                        <input type="email" placeholder="EMAIL ADRESS">
+                        <input class="email-input" type="email" placeholder="EMAIL ADRESS">
                         <button type="button" class="subscription-btn">SUBSCRIBE</button>
                     </form>
             </div>
         </section>
-        <footer>
-        <p>Made with  by WebDonut.net</p>
-    </footer>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <footer class="footer-section">
+            <div class="container">
+                <p>Made with <span class="footer-span">♥</span> by WebDonut.net</p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
         <script src="js/main.js"></script>
 </body>
 </html>

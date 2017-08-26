@@ -1,1 +1,53 @@
 // blog section
+.page-section-blog {
+    padding: 20px 0;
+}
+
+.blog-image {
+    height: 401px;
+    background-size: cover;
+}
+
+.blog-slide {
+    margin: 15px;
+}
+
+.blog-slider {
+    margin: 68px auto;
+    max-width: 1170px;
+}
+
+.blog-title {
+	text-transform: uppercase;
+	color: $accent;
+	font-size: 30px;
+	font-family: "Lato";
+	margin: 35px 0;
+}
+.blog-info {
+
+}
+
+.blog-author {
+	display: inline-block;
+	float: left;
+	padding-right: 10px;
+}
+.blog-topic{
+	display: inline-block;
+	&:before {
+			content: "|";
+			position: relative;
+			margin-right: 5px;
+		}
+}
+
+.blog-btn {
+	width: 170px;
+	height: 50px;
+	margin-top: 32px;
+}
+
+.blog-text {
+	min-height: 100px;
+}

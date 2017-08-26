@@ -2,6 +2,7 @@
 .page-section-hero {
     text-transform: uppercase;
     color: $white;
+    width:100%;
 }
 
 .hero-slider {
@@ -17,16 +18,28 @@
         margin: 0 auto;
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
 .hero-description {
-    font-size: 18px;
+    font-family: 'Open Sans Light';
+    font-size: 15px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop-min) {
+        font-size: 30px;
+    }
 }
 
 .hero-sale {
+    font-family: 'Lato Black';
+    font-size: 30px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop-min) {
+        font-size: 60px;
+    }
 }
 
 .increased-letter-spacing {
@@ -36,10 +49,40 @@
 .slick-dots {
     position: absolute;
     bottom: 0;
-    color: white;
+    color: $white;
 }
 
 .slick-dots li.slick-active button::before {
     color: $white;
     opacity: 0.75;
+}
+
+.btn-1 {
+    display: inline-block;
+    border: 2px solid;
+    background-color: transparent;
+    border-radius: 3%;
+}
+
+.hero-button {
+    font-family: "Lato";
+    font-size: 18px;
+    padding: 19px 45px;
+    margin-top: 53px;
+    border-color: $white;
+    color: $white;
+    text-transform: uppercase;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.btn-1:hover {
+    box-shadow: 0px 0px 34px -5px rgba(0,0,0,0.8);
+    transition: filter .2s ease-out; 
+    filter: grayscale(80%); 
+    color: $white;
+}
+
+.hero-button:hover {
+    color: $accent;
 }

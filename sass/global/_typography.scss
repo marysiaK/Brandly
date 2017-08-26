@@ -1,8 +1,15 @@
+.page-section {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .section-title {
     text-transform: capitalize;
     font-size: 30px;
     font-weight: 300;
     position: relative;
+    text-align: center;
 
     &::before, &::after {
         content: "";

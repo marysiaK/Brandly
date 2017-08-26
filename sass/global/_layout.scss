@@ -1,4 +1,9 @@
 .page-section {
     max-width: 1170px;
     margin: 0 auto;
+    max-width: 100%;
+}
+.full-width-section .content-container {
+    max-width: 1170px;
+    margin: 0 auto;
 }
