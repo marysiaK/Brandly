@@ -404,7 +404,9 @@ span.small-letters {
 
 .blog-image {
   height: 401px;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .blog-slide {
   margin: 15px; }
@@ -441,29 +443,54 @@ span.small-letters {
   min-height: 100px; }
 
 .page-section-subscribe {
-  padding: 75px 0;
+  text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  padding: 20px; }
+  @media screen and (min-width: 1024px) {
+    .page-section-subscribe {
+      text-align: left;
+      padding: 75px 0; } }
 
 .subscribe-title {
-  color: #fff; }
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold; }
+  @media screen and (min-width: 1024px) {
+    .subscribe-title {
+      font-size: 18px;
+      font-weight: normal; } }
 
 .email-input {
   background-color: transparent;
-  width: calc(100% - 600px);
+  width: calc(100% - 20px);
   margin: 30px 0;
-  height: 50px;
-  padding: 0 82px;
+  height: 30px;
   background: url("../images/mail.png") no-repeat;
-  background-position: 5px center;
+  background-position: 300px center;
   background-size: 20px; }
+  @media screen and (min-width: 1024px) {
+    .email-input {
+      width: calc(100% - 600px);
+      padding: 0 82px;
+      height: 50px;
+      background-position: 5px center; } }
 
 .subscription-btn {
-  line-height: 52px;
-  width: 270px;
-  font-size: 18px;
+  display: block;
+  margin: 20px auto;
+  line-height: 30px;
+  width: 150px;
+  font-size: 12px;
   font-weight: bold; }
+  @media screen and (min-width: 1024px) {
+    .subscription-btn {
+      display: inline-block;
+      margin-left: 75px;
+      line-height: 48px;
+      width: 270px;
+      font-size: 18px; } }
 
 .blog-text {
   color: #b6b6b6;
